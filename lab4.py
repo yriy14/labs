@@ -25,10 +25,10 @@ class laptop:
     
     def __repr__(self):
         return textwrap.dedent(f''' developer:  {self.__developer}: " 
-    frequency = {self.__frequency}GHz "
-    ram = {self.__ram}GB "
-    date_of_manufacture: {self.date_of_manufacture} "
-     display_type {self.display_type} 
+        frequency = {self.__frequency}GHz "
+        ram = {self.__ram}GB "
+        date_of_manufacture: {self.date_of_manufacture} "
+        display_type {self.display_type} 
     ''')
     
     def __del__(self):
