@@ -112,16 +112,16 @@ asia = Land("Asia")
 asia.add_country(china)
 asia.add_country(india)
 
-#print("Average population density in Asia:", asia.calculate_population_density())
+print("Average population density in Asia:", asia.calculate_population_density())
 
 north_america.sort_countries_by_gdp()
-#print("Countries in North America sorted by GDP:", north_america.countries)
+print("Countries in North America sorted by GDP:", north_america.countries)
 
 top_asian_countries = asia.top_countries_by_gdp(3)
-#print("Top 3 countries by GDP in Asia:", top_asian_countries)
+print("Top 3 countries by GDP in Asia:", top_asian_countries)
 
 democracies = asia.choose_country_by_population_and_government(min_population=1000000000, max_population=1500000000, gov_type=GovernmentType.DEMOCRACY)
-#print("Democracies with population between 1B and 1.5B:", democracies)
+print("Democracies with population between 1B and 1.5B:", democracies)
 
 movies = Movies()
 movies.add_movie("Inception", (2010, 7, 16), ["usa", "canada"])
