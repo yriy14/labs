@@ -24,12 +24,5 @@ def choose_column(words):
 # Отримуємо стовпець
 col = choose_column(words)
 
-
-#if col <= 0:
-#   answer = [''.join([words[row][col] for row in range(num)])]
-#    print("Результат:", max(answer, key=len))
-#else:
-#    print("delete wrong row pls")
-
 answer = [''.join([words[row][col] for row in range(num) if col < len(words[row])])]
 print("Результат:", max(answer, key=len))
